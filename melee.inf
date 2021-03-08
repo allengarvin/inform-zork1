@@ -1,0 +1,718 @@
+Constant F_DISARMED 1;
+Constant F_DEAD     2;
+Constant F_OUTCOLD  3;
+Constant F_WAKE     4;
+Constant F_ATTACKED 5;
+
+        Array Villains --> [ 3 0 0 0
+          troll sword 1 0 Troll_melee
+          thief nasty_knife 1 0 Thief_melee
+          cyclops 0 0 0 Cyclops_melee
+        ];
+        
+        Array Troll_melee --> 9
+           0 0 0 0 0 0 0 0 0
+           4 0 0 0 0
+           1 0
+           3 0 0 0
+           4 0 0 0 0
+           3 0 0 0
+           4 0 0 0 0
+           3 0 0 0
+           2 0 0
+           1 0
+        
+         1 "The troll swings his axe, but it misses."
+         1 "The troll's axe barely misses your ear."
+         1 "The axe sweeps past as you jump aside."
+         1 "The axe crashes against the rock, throwing sparks!"
+        
+         1 "The flat of the troll's axe hits you delicately on the head, knocking you out."
+        
+         1 "The troll neatly removes your head."
+         1 "The troll's axe stroke cleaves you from the nave to the chops."
+         1 "The troll's axe removes your head."
+        
+         1 "The axe gets you right in the side. Ouch!"
+         1 "The flat of the troll's axe skins across your forearm."
+         1 "The troll's swing almost knocks you over as you barely parry in time."
+         1 "The troll swings his axe, and it nicks your arm as you dodge."
+        
+         3 "The troll charges, and his axe slashes you on your " 0 " arm."
+         1 "An axe stroke makes a deep wound in your leg."
+         1 "The troll's axe swings down, gashing your shoulder."
+
+ 1 "The troll hits you with a glancing blow, and you are momentarily stunned."
+ 1 "The troll swings; the blade turns on your armor but crashes broadside into your head."
+ 1 "You stagger back under a hail of axe strokes."
+ 1 "The troll's mighty blow drops you to your knees."
+
+ 3 "The axe hits your " 0 " and knocks it spinning."
+ 3 "The troll swings, you parry, but the force of his blow knocks your " 0 " away."
+ 3 "The axe knocks your " 0 " out of your hand. It falls to the floor."
+
+ 1 "The troll hesitates, fingering his axe."
+ 1 "The troll scratches his head ruminatively:  Might you be magically protected, he wonders?"
+
+ 1 "Conquering his fears, the troll puts you to death."
+;
+
+Array Thief_melee --> 9
+  0 0 0 0 0 0 0 0 0
+  4 0 0 0 0
+  2 0 0
+  3 0 0 0
+  4 0 0 0 0
+  4 0 0 0 0
+  3 0 0 0
+  3 0 0 0
+  3 0 0 0
+  2 0 0
+
+  1 "The thief stabs nonchalantly with his stiletto and misses."
+  1 "You dodge as the thief comes in low."
+  1 "You parry a lightning thrust, and the thief salutes you with a grim nod."
+  1 "The thief tries to sneak past your guard, but you twist away."
+
+  1 "Shifting in the midst of a thrust, the thief knocks you unconscious with the haft of his stiletto."
+  1 "The thief knocks you out."
+
+  1 "Finishing you off, the thief inserts his blade into your heart."
+  1 "The thief comes in from the side, feints, and inserts the blade into your ribs."
+  1 "The thief bows formally, raises his stiletto, and with a wry grin, ends the battle and your life."
+
+  1 "A quick thrust pinks your left arm, and blood starts to trickle down."
+  1 "The thief draws blood, raking his stiletto across your arm."
+  1 "The stiletto flashes faster than you can follow, and blood wells from your leg."
+  1 "The thief slowly approaches, strikes like a snake, and leaves you wounded."
+
+  1 "The thief strikes like a snake! The resulting wound is serious."
+  1 "The thief stabs a deep cut in your upper arm."
+  1 "The stiletto touches your forehead, and the blood obscures your vision."
+  1 "The thief strikes at your wrist, and suddenly your grip is slippery with blood."
+
+  1 "The butt of his stiletto cracks you on the skull, and you stagger back."
+  1 "The thief rams the haft of his blade into your stomach, leaving you out of breath."
+  1 "The thief attacks, and you fall back desperately."
+
+  5 "A long, theatrical slash. You catch it on your " 0 ", but the thief twists his knife, and the " 0 " goes flying."
+  3 "The thief neatly flips your " 0 " out of your hands, and it drops to the floor."
+  3 "You parry a low thrust, and your " 0 " slips out of your hand."
+
+  1 "The thief, a man of superior breeding, pauses for a moment to consider the propriety of finishing you off."
+  1 "The thief amuses himself by searching your pockets."
+  1 "The thief entertains himself by rifling your pack."
+
+  1 "The thief, forgetting his essentially genteel upbringing, cuts your throat."
+  1 "The thief, a pragmatist, dispatches you as a threat to his livelihood."
+;
+
+Array Cyclops_melee --> 9
+  0 0 0 0 0 0 0 0 0
+  2 0 0
+  1 0
+  1 0
+  2 0 0
+  2 0 0
+  2 0 0
+  2 0 0
+  1 0
+  1 0
+
+  1 "The Cyclops misses, but the backwash almost knocks you over."
+  1 "The Cyclops rushes you, but runs into the wall."
+
+  1 "The Cyclops sends you crashing to the floor, unconscious."
+
+  1 "The Cyclops breaks your neck with a massive smash."
+
+  1 "A quick punch, but it was only a glancing blow."
+  1 "A glancing blow from the Cyclops' fist."
+
+  1 "The monster smashes his huge fist into your chest, breaking several ribs."
+  1 "The Cyclops almost knocks the wind out of you with a quick punch."
+
+  1 "The Cyclops lands a punch that knocks the wind out of you."
+  1 "Heedless of your weapons, the Cyclops tosses you against the rock wall of the room."
+
+  3 "The Cyclops grabs your " 0 ", tastes it, and throws it to the ground in disgust."
+  3 "The monster grabs you on the wrist, squeezes, and you drop your " 0 " in pain."
+
+  1 "The Cyclops seems unable to decide whether to broil or stew his dinner."
+
+  1 "The Cyclops, no sportsman, dispatches his unconscious victim."
+;
+
+Array Hero_melee --> 7
+  0 0 0 0 0 0 0
+  6 0 0 0 0 0 0
+  5 0 0 0 0 0
+  3 0 0 0
+  4 0 0 0 0
+  4 0 0 0 0
+  5 0 0 0 0 0
+  2 0 0
+      5 "Your " 0 " misses the " 1 " by an inch."
+      3 "A good slash, but it misses the " 1 " by a mile."
+      3 "You charge, but the " 1 " jumps nimbly aside."
+      3 "Clang! Crash! The " 1 " parries."
+      3 "A quick stroke, but the " 1 " is on guard."
+      3 "A good stroke, but it's too slow; the " 1 " dodges."
+  
+      5 "Your " 0 " crashes down, knocking the " 1 " into dreamland."
+      3 "The " 1 " is battered into unconsciousness."
+      3 "A furious exchange, and the " 1 " is knocked out!" 
+      5 "The haft of your " 0 " knocks out the " 1 "."
+      3 "The " 1 " is knocked out!"
+  
+      5 "It's curtains for the " 1 " as your " 0 " removes his head."
+      3 "The fatal blow strikes the " 1 " square in the heart:  He dies."
+      3 "The " 1 " takes a fatal blow and slumps to the floor dead." 
+  
+      3 "The " 1 " is struck on the arm; blood begins to trickle down."
+      5 "Your " 0 " pinks the " 1 " on the wrist, but it's not serious." 
+      1 "Your stroke lands, but it was only the flat of the blade."
+      3 "The blow lands, making a shallow gash in the " 1 "'s arm!"
+  
+      3 "The " 1 " receives a deep gash in his side."
+      3 "A savage blow on the thigh! The " 1 " is stunned but can still fight!" 
+      1 "Slash! Your blow lands! That one hit an artery, it could be serious!"
+      1 "Slash! Your stroke connects! This could be serious!"
+  
+      3 "The " 1 " is staggered, and drops to his knees."
+      3 "The " 1 " is momentarily disoriented and can't fight back."
+      3 "The force of your blow knocks the " 1 " back, stunned."
+      3 "The " 1 " is confused and can't fight back."
+      3 "The quickness of your thrust knocks the " 1 " back, stunned."
+
+      3 "The " 1 "'s weapon is knocked to the floor, leaving him unarmed."
+      3 "The " 1 " is disarmed by a subtle feint past his guard."
+; 
+  
+! Hideously ugly method to get around Inform's inability to declare
+! multi-dimensional arrays
+  
+[ SetupMelee tbl msg_offset i j k offset atbl mtbl;
+  offset = tbl-->0 + 1;
+  for( i = 1 : i <= tbl-->0 : i++ ) {
+    tbl-->i = tbl + offset * 2;
+    j = tbl-->offset;
+!    print "Offsetting ", j, "^";
+    offset = offset + j + 1;
+  } 
+  msg_offset = offset;
+  
+  offset = tbl-->0 + 1;
+  for( i = 1 : i <= tbl-->0 : i++ ) { 
+    j = tbl-->offset;
+    !print "Filling attack ", i, " with ", j, " elements^";
+  
+    for( k = 1 : k <= j : k++ ) {
+      tbl-->(offset + k) = tbl + msg_offset * 2;
+      msg_offset = msg_offset + (tbl-->msg_offset + 1); 
+    }
+    offset = offset + j + 1;
+  } 
+  
+  for( i = 1 : i <= tbl-->0 : i++ ) {
+!    print "DEBUG: Attack type ", i, ":^";
+    atbl = tbl-->i;
+!    print "DEBUG:  addr ", tbl + i * 2, " Number of msgs: ", atbl-->0, "^";
+    for( j = 1 : j <= atbl-->0 : j++ ) {
+      mtbl = atbl-->j;
+!      print "DEBUG:    msg ", j, " at ", atbl + j * 2, " has ", mtbl-->0, " elements^";
+  
+!    if( tbl == Troll_melee ) {
+!      for( k = 1 : k <= mtbl-->0 : k++ ) {
+!        if( mtbl-->k == 0 )
+!          print "WEAPON";
+!   else if( mtbl-->k == 1 )
+!          print "MONSTER";
+!        else
+!          print (string) mtbl-->k;
+!      }
+!       print "^";
+!    }
+    }
+  }
+];
+
+[ SetupMeleeTables;
+  SetupMelee(Troll_melee);
+  SetupMelee(Thief_melee);
+  SetupMelee(Cyclops_melee);
+  SetupMelee(Hero_melee);
+
+  Def1_res-->1 = Def1 + 2;
+  Def1_res-->2 = Def1 + 4;
+  Def2_res-->2 = Def2b + 2;
+  Def2_res-->3 = Def2b + 4;
+  Def3_res-->1 = Def3a + 2;
+  Def3_res-->3 = Def3b + 2;
+
+  Villains-->1 = Villains + 4 * 2;
+  Villains-->2 = Villains + 9 * 2;
+  Villains-->3 = Villains + 14 * 2;
+];
+
+Constant STRENGTH_MAX 7;
+Constant STRENGTH_MIN 2;
+Constant MISSED 1;             ! "attacker misses"
+Constant KNOCKOUT 2;           ! "defender unconscious"
+Constant KILLED 3;             ! "defender dead"
+Constant LIGHT_WOUND 4;        ! "defender lightly wounded"
+Constant SERIOUS_WOUND 5;      ! "defender seriously wounded"
+Constant STAGGER 6;            ! "defender staggered (miss turn)"
+!Constant LOSE_WEAPON 7;        ! "defender loses weapon"
+!Constant HESITATE 8;           ! "hesitates (miss on free swing)"
+!Constant SITTING_DUCK 9;       ! "sitting duck (crunch!)"
+
+Array Def1 --> [
+   MISSED MISSED MISSED MISSED
+   STAGGER STAGGER
+   KNOCKOUT KNOCKOUT
+   KILLED KILLED KILLED KILLED KILLED ];
+
+Array Def2a --> [
+   MISSED MISSED MISSED MISSED MISSED
+   STAGGER STAGGER
+   LIGHT_WOUND LIGHT_WOUND
+   KNOCKOUT ];
+Array Def2b --> [
+   MISSED MISSED MISSED
+   STAGGER STAGGER
+   LIGHT_WOUND LIGHT_WOUND LIGHT_WOUND
+   KNOCKOUT
+   KILLED KILLED KILLED ];
+Array Def3a --> [
+   MISSED MISSED MISSED MISSED MISSED
+   STAGGER STAGGER
+   LIGHT_WOUND LIGHT_WOUND
+   SERIOUS_WOUND SERIOUS_WOUND ];
+Array Def3b --> [
+   MISSED MISSED MISSED
+   STAGGER STAGGER
+   LIGHT_WOUND LIGHT_WOUND LIGHT_WOUND
+   SERIOUS_WOUND SERIOUS_WOUND SERIOUS_WOUND ];
+Array Def3c --> [
+   MISSED
+   STAGGER STAGGER
+   LIGHT_WOUND LIGHT_WOUND LIGHT_WOUND LIGHT_WOUND
+   SERIOUS_WOUND SERIOUS_WOUND SERIOUS_WOUND ];
+
+Array Def3_res --> [ Def3a 0 Def3b 0 Def3c ];
+Array Def2_res --> [ Def2a Def2b 0 0 ];
+Array Def1_res --> [ Def1 0 0 ];
+
+[ Remark remark_tbl defender weap len cnt text ;
+  ! print "DEBUG: Remark(", remark_tbl, ", ", (object) defender, ", ", (object) weap, ")^";
+  ! print "DEBUG: remark_tbl-->0 = ", len, "^";
+  len = remark_tbl-->0;
+
+  for( cnt = 1 : cnt <= len : cnt ++ ) {
+    text = remark_tbl-->cnt;
+    switch( text ) {
+      0: print (object) weap;
+      1: print (object) defender;
+      default: print (string) text;
+    }
+  }
+  new_line;
+  rtrue;
+];
+
+[ HeroBlow oo villain nohesitate dweapon att def cnt oa od tbl res len ; 
+    ! print "DEBUG: HeroBlow^";
+    if( noun == player ) {
+        return JigsUp("If you insist.... Poof, you're dead.");
+    }
+    len = Villains-->0;
+    for( cnt = 1 : cnt ~= len && oo-->0 ~= noun : cnt++ ) {
+        oo = Villains-->cnt;
+        ! print "DEBUG: Checking oo=", oo, ", oo-->0=", oo-->0, "^";
+    }
+    ! print "DEBUG: cnt=", cnt, "^";
+    give noun fightbit;
+    if (player has staggered) {
+        print "You are still recovering from that last blow, so your attack 
+            is ineffective.";
+        new_line;
+        give player ~staggered;
+        rtrue;
+    }
+    att = FightStrength(1);
+    if (att < 1) {
+        att = 1;
+    }
+    oa = att;
+    villain = oo-->0;
+    def = VillainStrength(oo);
+    od = true;
+    dweapon = HasWeapon(villain);
+    ! print "DEBUG: Villain has a weapon: ", (object) dweapon, ".^";
+    if ((~~dweapon) || def < 0) {
+        print "The ";
+        if (~~dweapon) {
+            print "unarmed";
+        } else {
+            print "unconscious";
+        }
+        print " ", (name) villain, " cannot defend himself: He dies.";
+        new_line;
+        res = 3;
+    } else {
+        if (def == 1) {
+            if (att > 2) {
+                att = 3;
+            }
+            tbl = Def1_res-->(att - 1);
+        } else if (def == 2) {
+            if (att > 3) {
+                att = 4;
+            }
+            tbl = Def2_res-->(att - 1);
+        } else if (def > 2) {
+            att = att - def;
+            if (att < -1) {
+                att = -2;
+            } else if (att > 1) {
+                att = 2;
+            }
+            tbl = Def3_res-->(att + 2);
+        }
+        res = tbl-->(random(9) - 1);
+        if (nohesitate) {
+            if (res == 6) {
+                res = 8;
+            } else {
+                res = 9;
+            }
+        }
+        if (res == 6 && dweapon && 25 > random(100)) {
+            res = 7;
+        }
+        Remark(PickOne(Hero_melee-->(res)),noun,second);    ! not popped
+    }
+    if (res ~= 1) {
+        if (res == 8) {
+            ! no code
+        } else if (res == 2) {
+            def = 0 - def;
+        } else if (res == 3 or 9) {
+            def = 0;
+        } else if (res == 4) {
+            --def;
+            if (def < 0) {
+                def = 0;
+            }
+        } else if (res == 5) {
+            def = def - 2;
+            if (def < 0) {
+                def = 0;
+            }
+        } else if (res == 6) {
+            give noun staggered;
+        } else {
+            if (res == 7) {
+                ! no code
+            }
+            give dweapon ~scenery;
+            give dweapon weapon;
+            move dweapon to location;
+            SetPronoun('it', dweapon);
+        }
+    }
+    return VillainResult(noun,def,res);
+];
+
+[ WinnerResult def res od ; ! 65178 / 0xfe9a
+  !  print "DEBUG: WinnerResult(", def, ") (strength is ", player.strength, ")^";
+    if( ~~def )
+        player.strength = -10000;
+    else
+        player.strength = (def - od);
+    if (def - od < 0) {
+        Queue(HealFunction,30)-->0 = true;
+    }
+    if (FightStrength(1) <= 0) {
+        player.strength = 1 + (0 - FightStrength(0));
+        JigsUp("It appears that that last blow was too much for you. I'm afraid you are dead.");    ! not popped
+        rfalse;
+    }
+    return res;
+];
+
+[ VillainResult villain def res ;   ! 65264 / 0xfef0
+    ! print "DEBUG: VillainResult(", (object) villain, ",", (number) def, ")^";
+    villain.strength = def;
+    if (~~def) {
+        give villain ~fightbit;
+        print "Almost as soon as the ", (name) villain, " breathes his last breath, a cloud of sinister black fog envelops him, and when the fog lifts, the carcass has disappeared.";
+        new_line;
+        remove villain;
+        villain.fight(2);  ! not popped
+        return res;
+    }
+    if (res == 2) {
+        villain.fight(3);  ! not popped
+        return res;
+    }
+    return res;
+];
+
+[ TimeToRetreat villain vill_str play_str ; ! 65412 / 0xff84
+    ! print "DEBUG: TimeToRetreat(", (object) villain, ")^";
+    vill_str = villain.strength;
+    play_str = vill_str - FightStrength(1);
+    if (play_str > 3) {
+        if (90 > random(100)) rtrue;
+        rfalse;
+    }
+    if (play_str > 0) {
+        if (75 > random(100)) rtrue;
+        rfalse;
+    }
+    if (~~play_str) {
+        if (50 > random(100)) rtrue;
+        rfalse;
+    }
+    if (vill_str > 1) {
+        if (25 > random(100)) rtrue;
+        rfalse;
+    }
+    if (10 > random(100)) rtrue;
+    rfalse;
+];
+
+[ HealFunction pstr ;   ! 65492 / 0xffd4
+    ! print "DEBUG: HealFunction^";
+    pstr = player.strength;
+    if (pstr > 0) {
+        pstr = 0;
+        player.strength = pstr;
+    } else if (pstr < 0) {
+        ++pstr;
+        player.strength = pstr;
+    }
+    if (pstr < 0) {
+        if (Load_max < Load_allowed) {
+            Load_max = Load_max + 10;
+        }
+        Queue(HealFunction,30)-->0 = true;
+        rtrue;
+    }
+    Load_max = Load_allowed;
+    QueueInterrupt(HealFunction)-->0 = false;
+    rtrue;
+];
+
+[ FightDaemon fightp len cnt oo o p ;   ! 65568 / 0x10020
+    ! print "DEBUG: FightDaemon^";
+    len = Villains-->0;
+    if (Dead) rfalse;
+    cnt = 0;
+    for ( cnt = 1 : cnt ~= len : cnt++ ) {
+        oo = Villains-->cnt;
+        o = oo-->0;
+        if (o in location && o hasnt concealed) {
+            if (o == thief && Thief_engrossed) {
+                Thief_engrossed = false;
+                continue;
+            }
+            if (o.strength < 0) {
+                p = oo-->3;
+                if (p && p > random(100)) {
+                    oo-->3 = 0;
+                    CheckStrength(o);   ! not popped
+                    continue;
+                }
+                oo-->3 = p + 25;
+                continue;
+            }
+            if (o hasnt fightbit && (~~o.fight(F_ATTACKED))) continue;
+            fightp = true;
+            continue;
+        }
+        if (o has fightbit) {
+            o.fight(F_DISARMED);    ! not popped
+        }
+        if (o == thief) {
+            Thief_engrossed = false;
+        }
+        give player ~staggered;
+        give o ~staggered;
+        give o ~fightbit;
+        CheckStrength(o);   ! not popped
+        continue;
+    }
+    if (~~fightp) rfalse;
+    return DoFight(len);
+];
+
+[ CheckStrength villain str ;   ! 65752 / 0x100d8
+    ! print "DEBUG: TimeToRetreat(", (object) villain, ")^";
+    str = villain.strength;
+    if (str >= 0) rtrue;
+    villain.strength = 0 - str;
+    villain.fight(F_WAKE);  ! not popped
+    rtrue;
+];
+
+[ FightStrength adjust str;
+  ! print "DEBUG: FightStrength^";
+  str = 2 + score / Max_Score / (STRENGTH_MAX - STRENGTH_MIN);
+  if( adjust )
+    return str + player.strength;
+  ! print "DEBUG: Actual fight strength is ", str, "^";
+  return str;
+];
+
+
+[ VillainStrength oo villain od tmp ;   ! 64162 / 0xfaa2
+   ! print "DEBUG: VillainStrength(", (name) oo-->0, ")^";
+    villain = oo-->0;
+    od = villain.strength;
+    if (od >= 0) {
+        if (villain == thief && Thief_engrossed) {
+            if (od > 2) {
+                od = 2;
+            }
+            Thief_engrossed = false;
+        }
+        if (second && second has weapon && oo-->1 == second) {
+            tmp = od - oo-->2;
+            if (tmp < 1) {
+                tmp = 1;
+            }
+            od = tmp;
+        }
+    }
+   !  print "DEBUG: VillainStrength end^";
+    return od;
+];
+
+[ VillainBlow oo out villain v_msgs p_weapon v_str p_str unused_flag o_p_str tbl result n_weapon ;  ! 64270 / 0xfb0e
+    ! print "DEBUG: VillainBlow()^";
+    villain = oo-->0; 
+    v_msgs = oo-->4;
+    give player ~staggered;
+    if (villain has staggered) {
+        print "The ", (name) villain, " slowly regains his feet.";
+        new_line;
+        give villain ~staggered;
+        rtrue;
+    }
+!    if( ~~HasWeapon(villain) )
+!        rtrue;
+    v_str = VillainStrength(oo);
+    unused_flag = 1;
+    p_str = FightStrength(1);
+    if (p_str <= 0) rtrue;
+    o_p_str = FightStrength(0);
+    p_weapon = HasWeapon(player);
+    if (p_str < 0) {
+        result = 3;
+    } else {
+        if (p_str == 1) {
+            if (v_str > 2) {
+                v_str = 3; 
+            }
+            tbl = Def1_res-->(v_str - 1);
+        } else if (p_str == 2) {
+            if (v_str > 3) {
+                v_str = 4; 
+            }
+            tbl = Def2_res-->(v_str - 1);
+        } else if (p_str > 2) {
+            v_str = v_str - p_str;
+            if (v_str < 65535) {
+                v_str = 65534; 
+            } else if (v_str > 1) {
+                v_str = 2;
+            }
+            tbl = Def3_res-->(v_str + 2);
+        }
+        result = tbl-->(random(9) - 1);
+        if (out) {
+            if (result == 6) {
+                result = 8;
+            } else {
+                result = 9;
+            }
+        }
+        if (result == 6 && p_weapon && Probability(25)) {
+            result = 7; 
+        }
+        Remark(PickOne(v_msgs-->(result)),player,p_weapon); ! not popped
+    }
+    if (result ~= 1) {
+        if (result == 8) {
+            ! no code 
+        } else if (result == 2) {
+            ! no code
+        } else if (result == 3 or 9) {
+            p_str = 0;
+        } else if (result == 4) {
+            --p_str;
+            if (p_str < 0) {
+                p_str = 0;
+            }
+            if (Load_max > 50) {
+                Load_max = Load_max - 10;
+            }
+        } else if (result == 5) {
+            p_str = p_str - 2;
+            if (p_str < 0) {
+                p_str = 0;
+            }
+            if (Load_max > 50) {
+                Load_max = Load_max - 20;
+            }
+        } else if (result == 6) {
+            give player staggered;
+        } else {
+            if (result == 7) {
+                ! no code
+            }
+            move p_weapon to location;
+            n_weapon = HasWeapon(player);
+            if (n_weapon) {
+                print "Fortunately, you still have a ", (name) n_weapon, ".";
+                new_line;
+            }
+        }
+    }
+    return WinnerResult(p_str,result,o_p_str);
+];
+
+[ DoFight len cnt res o oo out ;    ! 63968 / 0xf9e0
+    ! print "DEBUG: DoFight(", len, ")^";
+    do {
+        cnt = 0;
+        for( cnt=1 : cnt ~= len : cnt++ ) {
+            oo = Villains-->cnt;
+            o = oo-->0;
+            if (o hasnt fightbit) {
+                continue;
+            }
+            if (o.fight(F_DISARMED)) {
+                continue;
+            }
+            res = VillainBlow(oo,out);
+            if (~~res) {
+                res = 0;
+            } else {
+                if (res ~= 2) continue;
+                out = 1 + random(3);
+                continue;
+            }
+        }
+        res = 1;
+        if ((~~res) || (~~out)) rtrue;
+        out--; 
+    } until( out == 0 ); 
+    ! print "DEBUG: end DoFight()";
+    rtrue;
+];  
+    
+
